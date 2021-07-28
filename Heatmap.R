@@ -42,7 +42,7 @@ Exposure_Heatmap_All_Sites <-
         plot.title = element_text(hjust = 0.5),
         axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
         panel.grid.major = element_blank(),
-        panel.grid.minor = element_line(size = 1, linetype = 'solid', colour = "black"),
+        panel.grid.minor = element_blank(),
         panel.background = element_rect(fill = "white", colour = "white")) +
   annotate("text", x = 1, y = 0.75, label = "1. Exposed & announced before lockdown", hjust = 0, angle = 90) +
   annotate("text", x = length(Dates), y = 0.75, label = "2. Exposed before lockdown, announced after lockdown", hjust = 0, angle = 90) +
@@ -72,7 +72,7 @@ Exposure_Heatmap_Tier1_Sites <-
         plot.title = element_text(hjust = 0.5),
         axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
         panel.grid.major = element_blank(),
-        panel.grid.minor = element_line(size = 1, linetype = 'solid', colour = "black"),
+        panel.grid.minor = element_blank(),
         panel.background = element_rect(fill = "white", colour = "white")) +
   annotate("text", x = 1, y = 0.75, label = "1. Exposed & announced before lockdown", hjust = 0, angle = 90) +
   annotate("text", x = length(Dates), y = 0.75, label = "2. Exposed before lockdown, announced after lockdown", hjust = 0, angle = 90) +
